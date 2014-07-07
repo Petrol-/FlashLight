@@ -9,17 +9,23 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.content.res.Configuration;
+import android.graphics.Bitmap;
+import android.graphics.drawable.BitmapDrawable;
 import android.hardware.Camera;
 import android.hardware.Camera.Parameters;
+import android.hardware.display.DisplayManager;
 import android.media.MediaPlayer;
 import android.media.MediaPlayer.OnCompletionListener;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
+import android.util.DisplayMetrics;
 import android.util.Log;
+import android.view.Display;
 import android.view.SurfaceHolder;
 import android.view.SurfaceHolder.Callback;
 import android.view.SurfaceView;
 import android.view.View;
+import android.view.Window;
 import android.view.WindowManager;
 import android.widget.ImageButton;
 import android.widget.ImageView;
@@ -38,6 +44,7 @@ public class MainActivity extends Activity implements Callback {
 	 	private ImageButton btnSwitch;
 	 	private ImageButton btnSetting;
 	 	private ImageView light;
+	 	private ImageView lamp;
 	 	//private ImageView lamp;
 	 	private SharedPreferences userSettings;
 	 	private SharedPreferences.OnSharedPreferenceChangeListener prefListener;
@@ -69,7 +76,9 @@ public class MainActivity extends Activity implements Callback {
 		light = (ImageView)findViewById(R.id.img_light);
 		btnSwitch = (ImageButton) findViewById(R.id.btnSwitch);
 		btnSetting = (ImageButton) findViewById(R.id.btn_setting);
+		lamp = (ImageView)findViewById(R.id.img_lamp);
 		
+		initView();
 		//Set the Listeners
 		setBtnSwitchOnClickListener(); //Set the listener of btn_switch in a separate method
 		setBtnSettingOnClickListener();
@@ -81,6 +90,14 @@ public class MainActivity extends Activity implements Callback {
 		
 	}
 	
+	private void initView(){
+		DisplayMetrics dimension = new DisplayMetrics();
+		getWindowManager().getDefaultDisplay().getMetrics(dimension);
+		BitmapDrawable drawable = (BitmapDrawable) lamp.getDrawable();
+		Bitmap nImage = Bitmap.createScaledBitmap(drawable.getBitmap(), dimension.widthPixels, dimension.heightPixels, false);
+		lamp.setImageBitmap(nImage);
+		drawable = null;
+	}
 	
 	private void checkFlashSupport(){
 		
