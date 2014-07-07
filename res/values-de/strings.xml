@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Taschenlampe</string>
+    <string name="action_settings">Rahmen</string>
+    <string name="admob_id">ca-app-pub-9974782569800379/9465194443</string>
+	<!-- Preferences strings -->
+    <string name ="pref_sound">Klang</string>
+	<string name ="pref_sound_summ">Klang aktivieren</string>
+	<string name ="pref_categ_interface">Schnittstelle und klang</string>
+	<string name="pref_categ_light">Licht</string>
+	<string name ="pref_light_start">Einschalten beim Start</string>
+	<string name="pref_light_start_summ">Einschalten die Lampe beim Start</string>
+</resources>

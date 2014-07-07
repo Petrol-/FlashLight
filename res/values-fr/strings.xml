@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Lampe LED</string>
+    <string name="action_settings">Paramètres</string>
+    <string name="admob_id">ca-app-pub-9974782569800379/9465194443</string>
+	<!-- Preferences strings -->
+    <string name ="pref_sound">Son</string>
+	<string name ="pref_sound_summ">Activer le son</string>
+	<string name ="pref_categ_interface">Interface et son</string>
+	<string name="pref_categ_light">Lumière</string>
+	<string name ="pref_light_start">Allumer au démarrage</string>
+	<string name="pref_light_start_summ">Allumer la LED au démarrage de l\'application</string>
+</resources>

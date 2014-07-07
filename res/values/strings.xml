@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">FlashLight</string>
+    <string name="action_settings">Settings</string>
+    <string name="admob_id">ca-app-pub-9974782569800379/9465194443</string>
+	<!-- Preferences strings -->
+    <string name ="pref_sound">Sound</string>
+	<string name ="pref_sound_summ">Enable sound</string>
+	<string name ="pref_categ_interface">Interface and sound</string>
+	<string name="pref_categ_light">Light</string>
+	<string name ="pref_light_start">Turn on startup</string>
+	<string name="pref_light_start_summ">Turn on light on startup</string>
+</resources>

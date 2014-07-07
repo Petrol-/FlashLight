@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Linterna</string>
+    <string name="action_settings">configuraciónes</string>
+    <string name="admob_id">ca-app-pub-9974782569800379/9465194443</string>
+	<!-- Preferences strings -->
+    <string name ="pref_sound">Sonido</string>
+	<string name ="pref_sound_summ">Habilitar sonido</string>
+	<string name ="pref_categ_interface">Interfaz y sonido</string>
+	<string name="pref_categ_light">Luz</string>
+	<string name ="pref_light_start">Encender al abrir la aplicación</string>
+	<string name="pref_light_start_summ"></string>
+</resources>

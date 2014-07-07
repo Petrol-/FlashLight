@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:title="@string/pref_categ_light"
+        android:key="pref_key_light">
+        <CheckBoxPreference 
+            android:key="pref_light_start"
+            android:title="@string/pref_light_start"
+            android:summary="@string/pref_light_start_summ"
+            android:defaultValue="true"/>
+    </PreferenceCategory>
+   <PreferenceCategory 
+        android:title="@string/pref_categ_interface"
+        android:key="pref_key_interface">
+			    <CheckBoxPreference
+			        android:key="pref_sound"
+			        android:title="@string/pref_sound"
+			        android:summary="@string/pref_sound_summ"
+			        android:defaultValue="true" />
+    </PreferenceCategory>
+</PreferenceScreen>
